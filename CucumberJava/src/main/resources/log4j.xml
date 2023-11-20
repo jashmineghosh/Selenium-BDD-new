@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+    <!-- Define an appender for debug level logs -->
+    <appender name="debug" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="logs/debug.log" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
+        </layout>
+    </appender>
+
+    <!-- Define an appender for info level logs -->
+    <appender name="info" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="logs/info.log" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
+        </layout>
+    </appender>
+
+    <!-- Define an appender for warn level logs -->
+    <appender name="warn" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="logs/warn.log" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
+        </layout>
+    </appender>
+
+    <!-- Define an appender for error level logs -->
+    <appender name="error" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="logs/error.log" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
+        </layout>
+    </appender>
+
+    <!-- Configure the root logger to log all levels -->
+    <root>
+        <priority value="debug" />
+        <appender-ref ref="debug" />
+        <appender-ref ref="info" />
+        <appender-ref ref="warn" />
+        <appender-ref ref="error" />
+    </root>
+</log4j:configuration>
