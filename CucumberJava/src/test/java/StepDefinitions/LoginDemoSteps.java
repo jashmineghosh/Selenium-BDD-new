@@ -1,14 +1,5 @@
 package StepDefinitions;
 
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-//import org.openqa.selenium.firefox.FirefoxDriver;
-
-import io.cucumber.java.en.*;
-
 public class LoginDemoSteps {
 
 //	WebDriver driver = null;

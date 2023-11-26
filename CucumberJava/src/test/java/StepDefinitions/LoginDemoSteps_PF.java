@@ -1,18 +1,16 @@
 package StepDefinitions;
 
-import java.util.concurrent.TimeUnit;
-import java.util.logging.LogManager;
-import java.util.logging.Logger;
-
-import org.junit.Test;
-import org.openqa.selenium.By;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-
-import io.cucumber.java.en.*;
 import pagefactory.HomePage_PF;
 import pagefactory.LoginPage_PF;
+
+import java.util.concurrent.TimeUnit;
+import java.util.logging.Logger;
 
 public class LoginDemoSteps_PF {
     private static final Logger logger = Logger.getLogger(LoginDemoSteps_PF.class.getName());

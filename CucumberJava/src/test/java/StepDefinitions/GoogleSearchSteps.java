@@ -1,13 +1,16 @@
 package StepDefinitions;
 
-import java.util.concurrent.TimeUnit;
-
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import org.assertj.core.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import io.cucumber.java.en.*;
+import java.util.concurrent.TimeUnit;
 
 public class GoogleSearchSteps {
 
@@ -35,10 +38,11 @@ public class GoogleSearchSteps {
     @And("user is on google search page")
     public void user_is_on_google_search_page() {
 
-        System.out.println("Inside Step - user is on goolge search page");
+        System.out.println("Inside Step - user is on google search page");
 
         driver.navigate().to("https://google.com");
-
+        final String title = driver.getTitle();
+        Assertions.assertThat(title).isEqualTo("Google");
     }
 
     @When("user enters a text in search box")

@@ -6,9 +6,11 @@ StepsForBackground\BackgroundDemoSteps.class
 StepDefinitions\GoogleSearchSteps.class
 StepDefinitions\TestRunnerForBackgroundDemo.class
 StepsForHooks\HooksDemoSteps.class
+allure\TestCase1.class
 pagefactory\HomePage_PF.class
 pagefactory\LoginPage_PF.class
 pages\loginPage.class
 StepDefinitions\LoginDemoSteps_PF.class
 StepDefinitions\LoginDemoSteps_POM.class
 StepDefinitions\LoginSteps.class
+allure\TestCase2.class
